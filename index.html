@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      .accordion-button:focus, select:focus {
+          outline: none !important;
+          box-shadow: none !important;
+          background-color: white !important;
+          border-color: #000 !important; 
+          color: black !important;
+      }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="./images/logo .png" alt="logo" class="w-30" style="height: 50px;"> Fama Barber's
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#popular">Popular</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#blog">Gallery</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#reviews">Review</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#question">Questions</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link btn text-white bg-dark px-3 rounded-0" href="contact.html">Contact</a>
+              </li>
+
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+
+      <!--Hero section-->
+      <div id="carouselExampleAutoplaying" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/barber-1.jpg" class="d-block w-100-height" alt="img1">
+
+            <div class="carousel-caption carousel1">
+              <p>1 / 3</p>
+              <h5>Where Style Meets Precision<br> Your Hair Deserves Fama.</h5>
+              <p><a href="contact.html" class="btn btn-light btn-lg mt-3 rounded-5">Book appointment -></a></p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="./images/barber-2.jpg" class="d-block w-100-height" alt="img1">
+
+            <div class="carousel-caption carousel1">
+              <p>2 / 3</p>
+              <h5>Confidence starts <br> With <br> Great cut.</h5>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="./images/barber-3.jpg" class="d-block w-100-height" alt="img1">
+
+            <div class="carousel-caption carousel1">
+              <p>3 / 3</p>
+              <h5> Relax <br> Unwind <br> Get the perfect look</h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="icon">&larr;</span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="icon">&rarr;</span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      
+
+      <section class="container" style="margin-top: 50px;" id="popular">
+        <p class="pt-5">Popular</p>
+        <div class="d-flex">
+          <h2>Our Popular Services</h2>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-md-3 g-4 mt-2">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="./images/haircut_men.jpg" class="card-img-top" alt="..." height="190">
+              <div class="card-body">
+               <h5 class="card-title">Men’s Haircuts</h5>
+               <p class="card-text">From clean cuts to modern fades, we offer styles tailored to match your personality and look.</p>
+               <a href="contact.html" class="btn btn-dark" >Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="./images/haircut_women.png" class="card-img-top" alt="..." height="190">
+              <div class="card-body">
+               <h5 class="card-title">Women’s Haircuts</h5>
+               <p class="card-text">From trims to full transformations, we offer cuts, blowouts, and styling services to suit your unique look.</p>
+               <a href="contact.html" class="btn btn-dark">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="./images/beauty_treatment.jpg" class="card-img-top" alt="..." height="190">
+              <div class="card-body">
+               <h5 class="card-title">Beauty Treatments</h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+               <a href="contact.html" class="btn btn-dark">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-md-3 g-4 mt-2">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="./images/kids_haircut.jpg" class="card-img-top" alt="..." height="190">
+              <div class="card-body">
+               <h5 class="card-title">Kid’s Haircuts</h5>
+               <p class="card-text">Friendly for children. Get your little ones looking sharp with our kid-friendly barbers.</p>
+               <a href="contact.html" class="btn btn-dark">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="./images/beard-blog.jpg" class="card-img-top" alt="..." height="190">
+              <div class="card-body">
+               <h5 class="card-title">Beard grooming</h5>
+               <p class="card-text">Sculpt and style your beard with expert grooming — from sharp trims to classic shaves.</p>
+               <a href="contact.html" class="btn btn-dark">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="./images/coloring.jpg" class="card-img-top" alt="..." height="190">
+              <div class="card-body">
+               <h5 class="card-title">Hair Coloring</h5>
+               <p class="card-text">Whether it’s highlights or a bold transformation, our experts help you.</p>
+               <a href="contact.html" class="btn btn-dark">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-dark" style="margin-top: -15%;">
+        <div class="container pt-5">
+          <div class="row" style="margin-top: 25%;">
+            <div class="col-lg-4 mt-4">
+              <h2 style="color:#b5b5b5;">Fama Barber's</h2>
+            </div>
+
+            <div class="col-lg-8 mb-5">
+              <h6 class="lh-lg" style="color: #b5b5b5;">&ldquo; Established in 2018, PMC Barbershop has been providing premium  services to the men and women of Denton, TX. Our mission is to deliver exceptional haircuts and grooming services in a welcoming, classic barbershop environment. &rdquo;</h6>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section-padding" style="margin-top: 80px;" id="services">
+        <div class="text-center pb-5">
+          <h2>Why Choose US?</h2>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-md-12 col-12">
+              <div class="d-flex">
+                <div class="about-img mx-2">
+                  <img src="./images/about1.jpg" alt="about-img" class="img-fluid h-95 mt-4">
+                </div>
+
+                <div class="about-img">
+                  <img src="./images/about2.jpg" alt="about-img" class="img-fluid h-70">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-7 col-md-12 col-12 ps-lg-5 mt-2 md-5" style="margin-top: 40px;">
+              <div class="about-text">
+                <ul style="list-style: none;">
+                  <li class="mb-2">✂️ Experienced Stylists
+                      <br>Skilled professionals who know how to bring out the best in your look.</li>
+                  <li class="mb-2">🧼 Hygiene & Comfort First
+                      <br>We maintain a clean, safe, and relaxing environment for every client.
+                  </li class="mb-2">
+                  <li class="mb-2">⭐ Top-Rated by Clients
+                      <br>Rated 4.6 stars with 100+ reviews — trusted and loved by the community.
+                  </li>
+                  <li class="mb-2">🕒 Convenient Hours & Location
+                       Open daily till 7 PM, located at the heart of Denton.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!--gallery section-->
+      <section class="container" style="margin-top: 50px;" id="blog">
+        <div class="d-flex">
+          <h2>Gallery</h2>
+          <a href="./gallery.html" class="btn text-white bg-dark px-4 btn-md ms-auto rounded-0">See All</a>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-md-4 g-2 mt-2">
+
+          <div class="col">
+            <div class="card border-2 rounded-0" style="border-color: black; width: 200px; height: 200px;">
+              <img src="./images/salon1.jpg" class="card-img-top rounded-0" alt="image1" width="200" height="197">
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card border-2 rounded-0" style="border-color: black; width: 200px; height: 200px;">
+              <img src="./images/women1.jpg" class="card-img-top rounded-0" alt="image1" width="200" height="197">
+            </div>
+          </div>
+          
+          <div class="col">
+            <div class="card border-2 rounded-0" style="border-color: black; width: 200px; height: 200px;">
+              <img src="./images/beard1.jpg" class="card-img-top rounded-0" alt="image1" width="200" height="197">
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card border-2 rounded-0" style="border-color: black; width: 200px; height: 200px;">
+              <img src="./images/men1.jpg" class="card-img-top rounded-0" alt="image1" width="200" height="197">
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!--reviews section-->
+      <section class="bg-dark" style="margin-top: 100px;" id="reviews">
+        <div class="container pt-5">
+          <div class="d-flex" style="margin-top: 40px;">
+            <h2 class="text-light" style="margin-bottom: 30px;">What Our Customers <br> Say About Us</h2>
+          </div>
+        </div>
+
+        <div class="container mx-auto row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 pb-5">
+          <div class="card border-0 rounded-0 bg-transparent col-md-8">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="./images/team-1.png" class="img-fluid" alt="...">
+              </div>
+              <div class="col-md-7" style="margin-top: -8%;">
+                <div class="card-body">
+                  <h5 class="card-title text-light">Peter</h5>
+                  <p class="card-text" style="color: white; font-size: 0.7rem;">The attention to detail is unmatched, and the atmosphere is always welcoming. My barber remembers exactly how I like my fade every time!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card border-0 rounded-0 bg-transparent">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="./images/team-2.png" class="img-fluid" alt="...">
+              </div>
+              <div class="col-md-7" style="margin-top: -10%;">
+                <div class="card-body">
+                  <h5 class="card-title text-light">John</h5>
+                  <p class="card-text" style="color: white; font-size: 0.7rem;">I was nervous trying a new place. The team took their time to understand what I wanted and delivered exactly that. Will definitely be coming back!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card border-0 rounded-0 bg-transparent">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="./images/team-3.png" class="img-fluid" alt="...">
+              </div>
+              <div class="col-md-7" style="margin-top: -10%;">
+                <div class="card-body">
+                  <h5 class="card-title text-light">Raj</h5>
+                  <p class="card-text" style="color: white; font-size: 0.7rem;">The hot towel shave experience at Barbershop is phenomenal! It's the perfect blend of old-school barbering with modern techniques.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!--QNA Section-->
+      <section class="about section-padding" style="margin-top: 80px;" id="question">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-md-4 col-12 mt-md-3">
+              <div class="about-text">
+                <p>Questions</p>
+                <h2>Frequently Asked <br> Questions</h2>
+                <p style="font-size: 0.8rem;">We’ve gathered answers to some of the most common questions to help you out!</p>
+              </div>
+            </div>
+
+            <!--accordian-->
+            <div class="accordion col-lg-7 mt-3" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    What are your working hours?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body" style="font-size: 0.9rem;">
+                    We are open from 9:00 AM to 7:00 PM, Monday to Saturday. On Sundays, we operate from 10:00 AM to 4:00 PM.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Do I need to book an appointment in advance?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body" style="font-size: 0.9rem;">
+                    Walk-ins are always welcome, but to avoid waiting, we recommend booking an appointment in advance.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                     What services do you offer?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body" style="font-size: 0.9rem;">
+                    We offer a full range of grooming services including haircuts, beard trims, facials, head massages, and styling.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                     Can I cancel or reschedule my appointment?
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body" style="font-size: 0.9rem;">
+                    Yes, just let us know at least 2 hours in advance if you wish to cancel or reschedule.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--footer-->
+      <footer class="bg-dark bg-footer" style="margin-top: 80px;">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 me-4">
+              <h5 class="text-light mb-4">Fama Barber Shop and Beauty Salon</h5>
+              <p class="text-light"><i class="fa fa-location"></i> 500 N Bell Ave #109, Denton, TX 76209, United States</p>
+              <p class="text-light"><i class="fa fa-phone"></i>+1 940-612-9127</p>
+              <p class="text-light"><i class="fa fa-envelope"></i>fama@gmail.com</p>
+            </div>
+
+            <div class="col-lg-3">
+              <h5 class="text-light">Quick Links</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">Home</a></li>
+                <li><a href="#popular">Popular</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#blog">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3">
+              <h5 class="text-light">Stay Connected</h5>
+              <ul class="list-unstyled">
+                <li><a href="#"><i class="fab fa-facebook"></i> Facebok</a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i> Linkedin</a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="row">
+            <div class="col-lg-12">
+              <p class="text-center text-light">
+                Copyright &copy; 2025 <a href="#">Fama</a>. All Rights Reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
